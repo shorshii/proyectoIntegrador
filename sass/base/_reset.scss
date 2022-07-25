@@ -1,0 +1,12 @@
+*,
+*:before,
+*:after {
+    /* margin: 0;
+    padding: 0;  */
+    box-sizing: inherit;
+    /*heredan la clase del padre*/
+}
+
+body{
+    box-sizing: border-box;
+}

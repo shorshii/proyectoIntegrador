@@ -1,0 +1,28 @@
+// @media(min-width: 320px) {}
+// @media(min-width: 480px) {}
+// @media(min-width: 768px) {}
+// @media(min-width: 1024px) {}
+// @media(min-width: 1200px) {}
+
+
+.section-card {
+    background-color: rgb(86, 55, 115,); 
+    margin: 1em;
+    padding: 100px;
+    border-radius: 2%;
+    
+
+
+    &__header {
+        display: none;
+    }
+}
+
+@media(min-width: 320px) {
+    .section-card {
+        border-radius: 5px;
+        margin-top: 50px;
+        
+   }
+}
+

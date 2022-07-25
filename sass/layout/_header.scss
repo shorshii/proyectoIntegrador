@@ -1,0 +1,164 @@
+// @media(min-width: 320px) {}
+// @media(min-width: 480px) {}
+// @media(min-width: 768px) {}
+// @media(min-width: 1024px) {}
+// @media(min-width: 1200px) {}
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+
+.main-header {
+
+
+    &__name-company-container {
+        font-family: 'Audiowide';
+        text-align: end;
+        padding: 1em;
+        padding-left: 3em;
+        letter-spacing: 8px;
+        font-size: 24px;
+        background-color: #240046;
+        color: azure;
+    }
+
+    &__search-form-container {
+        background: rgb(36, 0, 70);
+        background: linear-gradient(90deg, rgba(36, 0, 70, 1) 0%, rgba(86, 55, 115, 1) 84%);
+        padding: 1.2em;
+        flex-grow: 1; // /* se le asigna el espacio total disponible en la pantalla */
+        order: 4;
+    }
+
+    &__search-type {
+        display: block;
+        float: right;
+        margin-right: 10px;
+    }
+
+    &__cart-button-container {
+        background-color: #240046;
+        padding: 1em;
+        font-size: 22px;
+        border-radius: 50% 50%;
+        position: fixed;
+        bottom: 1%;
+        right: 1%;
+    }
+
+    &__hamburger-button-container {
+        // background-color: #47b;
+        padding: 1em;
+        position: relative;
+    }
+
+
+    @media(min-width: 320px) {
+
+        &__logo-container {
+            background-color: #240046;
+            width: auto;
+            order: 1;
+        }
+
+        &__logo-img {
+            height: 100px;
+            position: absolute;
+            top: 0;
+
+        }
+
+        &__name-company-container {
+            font-size: 22px;
+            order: 2;
+        }
+
+        &__hamburger-button-container {
+            background-color: transparent;
+            width: 20px;
+            bottom: 45px;
+            left: 30px;
+            order: 3;
+        }
+
+        &__search-form-container {
+            height: 60px;
+            order: 4;
+        }
+
+        &__search-btn {
+            display: none;
+        }
+
+
+        &__cart-button-container {
+            order: 5;
+        }
+
+        &__nav-button-container {
+            margin-top: -50px;
+        }
+    }
+
+
+    @media(min-width: 480px) {
+        &__logo-img {
+            height: 220px;
+            position: absolute;
+            top: 0;
+            right: 60%;
+            order: 1;
+
+        }
+
+        &__name-company-container {
+            font-size: 18px;
+            order: 2;
+        }
+
+        &__hamburger-button-container {
+            background-color: transparent;
+            width: 20px;
+            bottom: 45px;
+            left: 45%;
+            order: 3;
+        }
+
+    }
+
+
+    @media(min-width: 768px) {
+        &__logo-img {
+            height: 200px;
+            position: absolute;
+            top: 0;
+            right: 75%;
+
+
+
+        }
+
+        &__name-company-container {
+            font-size: 24px;
+
+        }
+
+        &__hamburger-button-container {
+            display: none;
+        }
+
+    }
+
+    @media(min-width: 1024px) {
+        &__logo-img {
+            height: 320px;
+            position: absolute;
+            top: 0;
+    }
+    &__name-company-container {
+        font-size: 32px;
+        text-align: center;
+
+    }
+}
+
+    @media(min-width: 1200px) {}
+
+}
