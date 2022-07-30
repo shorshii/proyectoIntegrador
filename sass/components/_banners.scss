@@ -1,0 +1,37 @@
+// @media(min-width: 320px) {}
+// @media(min-width: 480px) {}
+// @media(min-width: 768px) {}
+// @media(min-width: 1024px) {}
+// @media(min-width: 1200px) {}
+
+
+    .banner-container{
+        display: block;
+        margin: 0 auto;
+        width: 90%;
+        padding: 0;
+        &__header{
+            display: grid;
+            grid-template-columns: 50px repeat(4);
+            grid-template-rows: 50px 400px;
+            gap: 10px 10px;
+        }
+        &__item1{
+            border-radius: 10px;
+            height: 100%;
+            width: 100%;
+            grid-column-start: 2;
+            grid-row: 2;
+            
+        }
+        &__item2{
+            border-radius: 10px;
+            height: 100%;
+            width: 100%;
+            grid-column-start: 3;
+            grid-row: 2;
+            
+        }
+       
+    
+    }

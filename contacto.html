@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>🪐 Juguetería Cósmica  - Alta -</title>
+</head>
+<body >
+    <input type="checkbox" id="main-nav-toggle" class="main-nav-toggle">
+    <header class="main-header">
+        <div class="main-header__name-company-container">Juegoteca Cósmica</div>
+        <div class="main-header__logo-container">
+            <img class="main-header__logo-img" src="img/isotipo.png" alt=""style="display: none">
+        </div>
+        <div class="main-header__search-form-container">
+            <input class="main-header__search-type" type="search" name="searching" placeholder="Buscar...🔍">
+            <input class="main-header__search-btn" type="submit" value="Buscar">
+
+        </div>
+        <div class="main-header__cart-button-container" style="display: none">
+            🛒
+        </div>
+        <div class="main-header__hamburger-button-container">
+            <label for="main-nav-toggle" class="hamburger-button">
+                <span class="hamburger-button__top-bread"></span>
+                <span class="hamburger-button__meat"></span>
+                <span class="hamburger-button__bottom-bread"></span>
+            </label>
+        </div>
+        <div class="main-header__nav-button-container">
+            <nav class="main-nav">
+                <ul class="main-nav__list">
+                    <li class="main-nav__item">
+                        <a class="main-nav__link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="main-nav__item">
+                        <a class="main-nav__link" href="alta.html">Alta</a>
+                    </li>
+                    <li class="main-nav__item">
+                        <a class="main-nav__link" href="contacto.html">Contacto</a>
+                    </li>
+                    <li class="main-nav__item">
+                        <a class="main-nav__link" href="nosotros.html">Nosotros</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+    </header>
+    <main>
+        <form class="form-contact" action="" method="POST" id="form">
+        <img class="form-contact__image" src="img/welcome.png" alt="bienvenidos">
+            <div class="form-contact__content">
+                <h1>Contacto</h1>
+                <div class="form-contact__group">
+                    <input class="form-contact__input" type="text" name="" id="name" required>
+                    <label class="form-contact__label" for="">Nombre</label>
+                </div>
+                <div class="form-contact__group">
+                    <input class="form-contact__input" type="email" name="" id="email" required>
+                    <label class="form-contact__label" for="">Email</label>
+                </div>
+                <div class="form-contact__group">
+                    <input class="form-contact__input" type="comentario" name="" id="comentario" required>
+                    <label class="form-contact__label" for="">Comentario</label>
+                </div>
+    
+                <button type="submit">Enviar</button>
+            </div>
+        </form>
+    </main>
+        <!-- <footer class="main-footer">
+            hola hola
+         </footer>
+         <script src="js/main.js"></script> -->
+</body>
+</html>
