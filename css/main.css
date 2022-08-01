@@ -1071,7 +1071,6 @@ input:focus ~ .form-alta__input::before {
   padding: 50px;
   margin: 0 auto;
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
   justify-items: center;
   gap: 1%;
@@ -1137,7 +1136,6 @@ input:focus ~ .form-alta__input::before {
   border-radius: 5%;
   padding: 2% 1%;
   position: relative;
-  left: 30%;
   width: 50%;
   margin: 0;
 }
@@ -1188,9 +1186,6 @@ input:focus ~ .form-alta__input::before {
     margin-left: 10px;
     width: 300px;
   }
-  .footer-container__box3 {
-    margin-left: 10%;
-  }
   .footer-container__box3-social {
     width: 300px;
   }
@@ -1199,14 +1194,17 @@ input:focus ~ .form-alta__input::before {
   }
   .footer-container__box3-p1 {
     font-size: 14px;
+    text-align: left;
   }
 }
 @media (min-width: 768px) {
   .footer-container {
     margin-left: 100px;
   }
-  .footer-container__box1 {
-    font-size: 18px;
+  .footer-container__box1, .footer-container__box2, .footer-container__box3, .footer-container__box3-2 > p {
+    font-size: 12px;
+    margin-left: 0;
+    text-align: left;
   }
   .footer-container__box1-p1 {
     font-size: 24px;
@@ -1216,20 +1214,11 @@ input:focus ~ .form-alta__input::before {
     width: 400px;
     margin: 10px auto;
   }
-  .footer-container__box2 {
-    font-size: 18px;
-  }
-  .footer-container__box3 {
-    margin-left: 0;
-  }
   .footer-container__box3-social {
     width: 400px;
   }
   .footer-container__box3-social > img {
     margin: 20px;
-  }
-  .footer-container__box3-p1 {
-    font-size: 18px;
   }
   .footer-container__box3-p1 br {
     display: none;
@@ -1242,22 +1231,31 @@ input:focus ~ .form-alta__input::before {
   .footer-container__box3 {
     width: 100%;
   }
-  .footer-container__box3, .footer-container__box3-2 > * {
-    text-align: center;
-    margin: 0 auto;
+  .footer-container__box3-social {
+    width: 100%;
+    position: relative;
+    right: 25%;
+    padding: 10px;
+    background-color: transparent;
+    border-radius: none;
   }
-}
-@media (min-width: 1500px) {
-  .footer-container__box1, .footer-container__box2, .footer-container__box3, .footer-container__box3-2 {
-    width: auto;
-    background-color: red;
-  }
-  .footer-container__box3, .footer-container__box3-2 > * {
-    text-align: left;
-    width: 40%;
+  .footer-container__box3-social > img {
+    background-color: #fff;
+    padding: 5px;
+    border-radius: 50%;
+    height: 50px;
+    position: relative;
+    left: 25%;
+    margin: 0 3%;
   }
 }
 
+@media (min-width: 1500px) {
+  .footer-container {
+    flex-wrap: nowrap;
+    gap: 10%;
+  }
+}
 * {
   padding: 0;
   margin: 0;
