@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,7 +12,7 @@
     <header class="main-header">
         <div class="main-header__name-company-container">Juegoteca Cósmica</div>
         <div class="main-header__logo-container">
-            <img class="main-header__logo-img" src="img/isotipo.png" alt=""style="display: none">
+            <img class="main-header__logo-img" src="img/isotipo.png" alt="" style="display: none">
         </div>
         <div class="main-header__search-form-container">
             <input class="main-header__search-type" type="search" name="searching" placeholder="Buscar...🔍">
@@ -50,27 +50,27 @@
 
     </header>
     <main>
-        <form class="form-contact" action="" method="POST" id="form">
+        <form class="form-contact" action="#" id="form">
         <img class="form-contact__image" src="img/welcome.png" alt="bienvenidos">
             <div class="form-contact__content">
                 <h1>Contacto</h1>
                 <div class="form-contact__group">
-                    <input class="form-contact__input" type="text" name="name" id="name" required>
-                    <label class="form-contact__label" for="">Nombre</label>
-                    <div id="form-contact__notName"></div>
+                    <input class="form-contact__input" type="text" name="name" id="name" >
+                    <label class="form-contact__label" for="name">Nombre</label>
+                    <div id="error-notName"></div>
                 </div>
                 <div class="form-contact__group">
-                    <input class="form-contact__input" type="email" name="email" id="email" required>
-                    <label class="form-contact__label" for="">Email</label>
-                    <div id="form-contact__notEmail"></div>
+                    <input class="form-contact__input" type="email" name="email" id="email" >
+                    <label class="form-contact__label" for="email">Email</label>
+                    <div id="error-notEmail"></div>
                 </div>
                 <div class="form-contact__group">
-                    <input class="form-contact__input" type="text" name="content" id="content" required>
-                    <label class="form-contact__label" for="">Comentario</label>
-                    <div id="form-contact__notContent"></div>
+                    <input class="form-contact__input" type="text" name="content" id="content" >
+                    <label class="form-contact__label" for="content">Comentario</label>
+                    <div id="error-notContent"></div>
                 </div>
     
-                <button type="submit">Enviar</button>
+                <button class="btn-submit" id= "submit" type="submit">Enviar</button>
             </div>
         </form>
     </main>
@@ -126,7 +126,7 @@
                             alt="">11-xxxx-xxxx</p>
                     <p class="footer-container__box3-p1"><img class="footer-container__box3-img"
                             src="https://cdn4.iconfinder.com/data/icons/envelope-3/64/envelope_flat_net-09-256.png"
-                            alt="">atencionalcliente@</br style="display:none">juegotecacosmica.com.ar</p>
+                            alt="">atencionalcliente@</br style="display:none;">juegotecacosmica.com.ar</p>
                 </div>
             </div>
         </section>

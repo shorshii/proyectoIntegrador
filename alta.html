@@ -42,62 +42,72 @@
                         <a class="main-nav__link" href="contacto.html">Contacto</a>
                     </li>
                     <li class="main-nav__item">
-                        <a class="main-nav__link" href="/nosotros.html">Nosotros</a>
+                        <a class="main-nav__link" href="nosotros.html">Nosotros</a>
                     </li>
                 </ul>
             </nav>
         </div>
     </header>   
 <main>
-    <main>
-        <form class="form-alta" action="" method="POST" id="form">
+        <form class="form-alta" action="#" id="form">
+            <img class="form-alta__img" src="img/banner.png" alt="">
             <div class="form-alta__content">
                 <h1>Alta de Producto</h1>
                 <div class="form-alta__group">
-                    <input class="form-alta__input"type="text" name="" id="name" required>
-                    <label class="form-alta__label" for="">Nombre:</label>
+                    <label class="form-alta__label" for="itemName">*Nombre del Producto:</label>
+                    <input class="form-alta__input" type="text" name="itemName" id="itemName" >
+                    <div id="error-notItemName"></div>
                 </div>
                 <div class="form-alta__group">
-                    <input class="form-alta__input" type="number" name="" id="precio" required>
-                    <label class="form-alta__label" for="">Precio:</label>
+                    <label class="form-alta__label" for="price">*Precio:</label>
+                    <input class="form-alta__input" type="number" name="price" id="price" >
+                    <div id="error-notPrice"></div>
                 </div>
                 <div class="form-alta__group">
-                    <input class="form-alta__input" type="text" name="" id="stock" required>
-                    <label class="form-alta__label" for="">Stock:</label>
+                    <label class="form-alta__label" for="stock">*Stock:</label>
+                    <input class="form-alta__input" type="number" name="stock" id="stock" >
+                    <div id="error-notStock"></div>
                 </div>
                 <div class="form-alta__group">
-                    <input class="form-alta__input" type="text" name="" id="marca" required>
-                    <label class="form-alta__label" for="">Marca:</label>
+                    <label class="form-alta__label" for="company">*Marca:</label>
+                    <input class="form-alta__input" type="text" name="company" id="company" >
+                    <div id="error-notCompany"></div>
                 </div>
                 <div class="form-alta__group">
-                    <input class="form-alta__input" type="text" name="" id="categoria" required>
-                    <label class="form-alta__label" for="">Categoria:</label>
+                    <label class="form-alta__label" for="kind">Categoria:</label>
+                    <input class="form-alta__input" type="text" name="kind" id="kind" >
+                    
                 </div>
                 <div class="form-alta__group">
-                    <input class="form-alta__input" type="text" name="" id="lowDescrip" required>
-                    <label class="form-alta__label" for="">Descripcion Corta:</label>
+                    <label class="form-alta__label" for="ShortDesc">Descripcion Corta:</label>
+                    <input class="form-alta__input" type="text" name="s-desc" id="ShortDesc" >
+                    
                 </div>
                 <div class="form-alta__group">
-                    <input class="form-alta__input" type="text" name="" id="longDescrip" required>
-                    <label class="form-alta__label" for="">Descripcion Larga:</label>
+                    <label class="form-alta__label" for="longDesc">Descripcion Larga:</label>
+                    <input class="form-alta__input" type="text" name="l-desc" id="longDesc" >
+                    
+                </div>
+                <label class="form-alta__label" for="shipping-Y">*Envio sin cargo</label>
+                <div class="form-alta__group" style="padding: 30px; margin-left: 50%;" >
+                    <input type="radio" name="shipping" id="shipping-Y">
+                    <label>Si</label>
+                    <input type="radio" name="shipping" id="shipping-N">
+                    <label>No</label>
+                    
                 </div>
                 <div class="form-alta__group">
-                    <input class="form-alta__input" type="radio" name="" id="envio" required>
-                    <label class="form-alta__label" for="">Envio sin cargo</label>
+                    <label class="form-alta__label" for="age">Edad:</label>
+                    <input class="form-alta__input" type="number" name="age" id="age" >
+                    
                 </div>
-                <div class="form-alta__group">
-                    <input class="form-alta__input" type="number" name="" id="edad" required>
-                    <label class="form-alta__label" for="">Edad:</label>
-                </div>
-    
-                <button type="submit">Enviar</button>
+                
+                <button class="btn-submit" id= "submit" type="submit">Enviar</button>
             </div>
+            <div id="error-notformValid"></div>
         </form>
     </main>
 
-
-
-</main>
 <footer class="footer">
     <section class="footer-container">
         <div class="footer-container__box1">
@@ -150,7 +160,7 @@
                         alt="">11-xxxx-xxxx</p>
                 <p class="footer-container__box3-p1"><img class="footer-container__box3-img"
                         src="https://cdn4.iconfinder.com/data/icons/envelope-3/64/envelope_flat_net-09-256.png"
-                        alt="">atencionalcliente@</br style="display:none">juegotecacosmica.com.ar</p>
+                        alt="">atencionalcliente@</br style="display:none;">juegotecacosmica.com.ar</p>
             </div>
         </div>
     </section>

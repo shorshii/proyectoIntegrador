@@ -1,37 +1,92 @@
 // @media(min-width: 320px) {}
-// @media(min-width: 480px) {}
+    // @media(min-width: 480px) {}
 // @media(min-width: 768px) {}
 // @media(min-width: 1024px) {}
 // @media(min-width: 1200px) {}
 
 
-    .banner-container{
-        display: block;
-        margin: 0 auto;
-        width: 90%;
-        padding: 0;
-        &__header{
-            display: grid;
-            grid-template-columns: 50px repeat(4);
-            grid-template-rows: 50px 400px;
-            gap: 10px 10px;
+.banner-container {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    padding: 0;
+
+
+    @media(min-width: 320px) {
+        &__header {
+            display: flex;
+            flex-wrap: wrap;
         }
-        &__item1{
-            border-radius: 10px;
-            height: 100%;
-            width: 100%;
-            grid-column-start: 2;
-            grid-row: 2;
-            
+
+        &__item1,&__item2{
+            margin:5% auto 1%;
+            height: 120px;
         }
-        &__item2{
-            border-radius: 10px;
-            height: 100%;
-            width: 100%;
-            grid-column-start: 3;
-            grid-row: 2;
-            
-        }
-       
-    
+
+        &__item3{
+            display: none;
+        } 
     }
+    @media(min-width: 480px) {
+            &__header {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        &__item1{
+            margin-top: 120px;
+            height: 170px;
+        }
+        &__item2 {
+            height: 170px;
+        }
+    }
+    @media(min-width: 768px) {
+        &__item1{
+            margin-top: 20px;
+            height: 300px;
+        }
+        &__item2 {
+            height: 300px;
+        } 
+      
+    }
+    @media(min-width: 1024px) {
+        &__item1{
+            margin-top: 20px;
+            height: 350px;
+        }
+        &__item2 {
+            height: 350px;
+        } 
+    }
+    @media(min-width: 1200px) {
+        &__item1{
+            margin-top: 20px;
+            height: 400px;
+        }
+        &__item2 {
+            height: 400px;
+        }  
+        &__item3{
+            display: block;
+            margin-top: 30px;
+            height: 150px;
+            width: 100%;
+           
+        } 
+    }
+    @media(min-width: 1700px) {
+        &__item1,&__item2{
+           margin: 0;
+            height: 350px;
+            margin: 5px auto;
+        }
+        &__item3{
+            display: block;
+            height: 220px;
+            width: 98%;
+           
+        } 
+    }
+}
